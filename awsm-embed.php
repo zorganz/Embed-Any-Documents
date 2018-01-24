@@ -103,7 +103,7 @@ class Awsm_embed {
         ) );
         // Prepare EAD icon
         if ( $args['icon'] ) {
-            $args['icon'] = '<img src="' . esc_url( $args['icon'] ) . '" /> ';
+            $args['icon'] = '<img src="' . esc_url( $args['icon'] ) . '" alt="add document" role="presentation"/> ';
         }
         // Print button in media column
         $button = '<a href="javascript:void(0);" class="' . esc_attr( $args['class'] ) . '" title="' . esc_attr( $args['text'] ) . '" data-mfp-src="#embed-popup-wrap" data-target="' . esc_attr( $args['target'] ) . '" >' . $args['icon'] . esc_html( $args['text'] ) . '</a>';
